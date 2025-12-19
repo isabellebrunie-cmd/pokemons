@@ -1,4 +1,4 @@
-public class PokemonFeu extends Animal implements Attaquant, Soignant {
+public class PokemonFeu extends Pokemon implements Attaquant, Soignant {
 
     public PokemonFeu(String nom, int niveau, int pointDeVie) {
         super(nom, niveau, pointDeVie);

@@ -1,4 +1,4 @@
-public class PokemonElectrik extends Animal implements Attaquant, Soignant {
+public class PokemonElectrik extends Pokemon implements Attaquant, Soignant {
 
     public PokemonElectrik(String nom, int niveau, int pointDeVie) {
         super(nom, niveau, pointDeVie);

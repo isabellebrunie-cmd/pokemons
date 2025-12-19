@@ -1,4 +1,4 @@
-public class PokemonEau extends Animal implements Attaquant, Soignant {
+public class PokemonEau extends Pokemon implements Attaquant, Soignant {
 
     public PokemonEau(String nom, int niveau, int pointDeVie) {
         super(nom, niveau, pointDeVie);
