@@ -1,7 +1,7 @@
 public class PokemonFeu extends Pokemon implements Attaquant, Soignant {
 
-    public PokemonFeu(String nom, int niveau, int pointDeVie) {
-        super(nom, niveau, pointDeVie);
+    public PokemonFeu(String nom, int niveau, int pointDeVie, int pointDeDegat) {
+        super(nom, niveau, pointDeVie, pointDeDegat);
     }
 
     @Override
@@ -12,6 +12,11 @@ public class PokemonFeu extends Pokemon implements Attaquant, Soignant {
     @Override
     public void soigner() {
         this.pointDeVie += 10;
+    }
+
+    public int combattre(Pokemon p) {
+        super.combattre(p);
+        return p.pointDeVie;
     }
 
     @Override

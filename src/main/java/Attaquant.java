@@ -1,3 +1,3 @@
 public interface Attaquant {
-    public void attaquer();
+    void attaquer();
 }

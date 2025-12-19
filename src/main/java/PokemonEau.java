@@ -1,7 +1,7 @@
 public class PokemonEau extends Pokemon implements Attaquant, Soignant {
 
-    public PokemonEau(String nom, int niveau, int pointDeVie) {
-        super(nom, niveau, pointDeVie);
+    public PokemonEau(String nom, int niveau, int pointDeVie, int pointDeDegat) {
+        super(nom, niveau, pointDeVie, pointDeDegat);
     }
 
     @Override
