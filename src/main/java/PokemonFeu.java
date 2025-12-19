@@ -1,7 +1,7 @@
-public class PokemonFeu extends Animal implements Attaquant {
+public class PokemonFeu extends Animal implements Attaquant, Soignant {
 
-    public PokemonFeu(String nom, int niveau) {
-        super(nom, niveau);
+    public PokemonFeu(String nom, int niveau, int pointDeVie) {
+        super(nom, niveau, pointDeVie);
     }
 
     @Override
@@ -10,10 +10,15 @@ public class PokemonFeu extends Animal implements Attaquant {
     }
 
     @Override
+    public void soigner() {
+    }
+
+    @Override
     public String toString() {
         return "PokemonFeu{" +
                 "nom='" + nom + '\'' +
                 ", niveau=" + niveau +
+                ", pointDeVie=" + pointDeVie +
                 '}';
     }
 }

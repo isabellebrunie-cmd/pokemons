@@ -1,7 +1,7 @@
-public class PokemonElectrik extends Animal implements Attaquant {
+public class PokemonElectrik extends Animal implements Attaquant, Soignant {
 
-    public PokemonElectrik(String nom, int niveau) {
-        super(nom, niveau);
+    public PokemonElectrik(String nom, int niveau, int pointDeVie) {
+        super(nom, niveau, pointDeVie);
     }
 
     @Override
@@ -10,10 +10,16 @@ public class PokemonElectrik extends Animal implements Attaquant {
     }
 
     @Override
+    public void soigner() {
+
+    }
+
+    @Override
     public String toString() {
         return "PokemonElectrik{" +
                 "nom='" + nom + '\'' +
                 ", niveau=" + niveau +
+                ", pointDeVie=" + pointDeVie +
                 '}';
     }
 }
