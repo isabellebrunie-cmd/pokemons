@@ -11,7 +11,7 @@ public class PokemonEau extends Pokemon implements Attaquant, Soignant {
 
     @Override
     public void soigner() {
-
+        this.pointDeVie += 12;
     }
 
     @Override

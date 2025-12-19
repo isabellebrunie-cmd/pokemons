@@ -10,18 +10,16 @@ public class Main {
         PokemonEau eau1 = new PokemonEau("Jet", 12, 67);
         PokemonFeu feu1 = new PokemonFeu("Pyro", 15, 120);
 
-        List<Attaquant> typeAttaquant = new ArrayList<>();
-        typeAttaquant.add(elec1);
-        typeAttaquant.add(eau1);
-        typeAttaquant.add(feu1);
+        List<Pokemon> pokedex = new ArrayList<>();
+        pokedex.add(elec1);
+        pokedex.add(eau1);
+        pokedex.add(feu1);
 
-/*
-        for (Attaquant a:typeAttaquant) {
-            a.attaquer();
-            System.out.println(a.toString());
+
+        for (Pokemon p:pokedex) {
+            System.out.println(p.toString());
         }
 
-*/
 
         feu1.attaquer();
         eau1.attaquer();

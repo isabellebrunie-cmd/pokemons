@@ -11,6 +11,7 @@ public class PokemonFeu extends Pokemon implements Attaquant, Soignant {
 
     @Override
     public void soigner() {
+        this.pointDeVie += 10;
     }
 
     @Override

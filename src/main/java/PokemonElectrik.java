@@ -11,7 +11,7 @@ public class PokemonElectrik extends Pokemon implements Attaquant, Soignant {
 
     @Override
     public void soigner() {
-
+        this.pointDeVie += 9;
     }
 
     @Override
